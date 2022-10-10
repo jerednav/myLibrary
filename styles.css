@@ -6,3 +6,8 @@ header {
   width: 100vw;
   background-color: antiquewhite;
 }
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
