@@ -96,20 +96,7 @@ document.addEventListener("click", function (e) {
   if (e.target && e.target.className === "delete-book") {
     deleteBook(e.target);
   }
-  //   if (e.target && e.target.className === "status-button") {
-  //     toggleRead(e.target);
-  //   }
+  if (e.target && e.target.className === "btn-light-green") {
+    toggleRead(e.target);
+  }
 });
-
-// function toggleRead(e) {
-//   let index = readBtn.parentNode.parentNode.getAttribute("data");
-//   if (library[index].isRead) {
-//     library[index].isRead = false;
-//     readBtn.textContext = "Read";
-//     // readBtn.classList.add("btn-light-green");
-//   } else {
-//     library[index].isRead = true;
-//     readBtn.textContext = "Not read";
-//     readBtn.classList.add("btn-light-red");
-//   }
-// }
