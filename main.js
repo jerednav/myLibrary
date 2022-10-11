@@ -82,7 +82,7 @@ function createBook(obj) {
   bookDiv.appendChild(readDiv);
 
   deleteDiv.textContent = "Delete";
-  deleteDiv.classList.add("book-delete");
+  deleteDiv.classList.add("delete-book");
   bookDiv.appendChild(deleteDiv);
 }
 
@@ -95,7 +95,9 @@ function deleteBook(deleteButton) {
 }
 
 document.addEventListener("click", function (e) {
-  if (e.target && e.target.className === "delete0button") {
+  console.log(e);
+  if (e.target && e.target.className === "delete-book") {
     deleteBook(e.target);
   }
 });
+console.log(event);
